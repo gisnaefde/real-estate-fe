@@ -38,8 +38,8 @@ const Header = () => {
             <div className='md:hidden absolute z-50'>
                 {!open && (
                     <div className='fixed top-0 left-0 right-0'>
-                        <div className='flex justify-between items-center bg-transparent p-4'>
-                            <img src={logo3} className='h-10' alt='Logo' />
+                        <div className='flex justify-between items-center bg-white p-4'>
+                            <img src={logo3} className='h-6' alt='Logo' />
                             <button onClick={toggleMenu} className='text-gray-800 focus:outline-none'>
                                 <Bars3Icon className='w-8 h-8' />
                             </button>
@@ -49,9 +49,9 @@ const Header = () => {
 
                 }
                 {open && (
-                    <div className='h-screen bg-green '>
+                    <div className='h-full w-screen fixed bg-green  '>
                         <div className='flex justify-between items-center p-4'>
-                            <img src={logo4} className='h-10' alt='Logo' />
+                            <img src={logo4} className='h-6' alt='Logo' />
                             <button onClick={toggleMenu} className='text-gray-800 focus:outline-none z-30'>
                                 <XMarkIcon className='w-8 h-8' />
                             </button>

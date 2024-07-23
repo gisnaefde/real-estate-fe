@@ -2,7 +2,7 @@ import hero from '../../assets/images/hero.jpg'
 
 const Hero = () => {
     return (
-        <div className='relative w-full h-full'>
+        <div className='relative w-full h-full mt-16 md:mt-0'>
             <img src={hero} alt='hero image' className='w-full h-full object-cover'></img>
             <div className='absolute inset-0 flex items-center justify-center z-10'>
                 <div className='mt-32 md:mt-72'>
