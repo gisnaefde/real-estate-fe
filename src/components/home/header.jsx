@@ -49,7 +49,7 @@ const Header = () => {
 
                 }
                 {open && (
-                    <div className='h-full w-screen fixed bg-green  '>
+                    <div className='h-full w-screen fixed top-0 bg-green  '>
                         <div className='flex justify-between items-center p-4'>
                             <img src={logo4} className='h-6' alt='Logo' />
                             <button onClick={toggleMenu} className='text-gray-800 focus:outline-none z-30'>

@@ -1,13 +1,15 @@
 import Header from "../components/home/header"
 import Hero from "../components/home/hero"
+import PropertyListed from "../components/home/propertyListed"
 import PropertyTypes from "../components/home/propertyTypes"
 
 const Home = () =>{
     return(
         <>
-            <Header></Header>
-            <Hero></Hero>
-            <PropertyTypes></PropertyTypes>
+            <Header/>
+            <Hero/>
+            <PropertyTypes/>
+            <PropertyListed/>
         </>
     )
 }

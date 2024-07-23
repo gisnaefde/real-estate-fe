@@ -3,7 +3,7 @@ import { HomeIcon, HomeModernIcon, BuildingOffice2Icon, BuildingLibraryIcon, Bui
 const PropertyTypes = () => {
     return (
         <div className='bg-gray100'>
-            <div className="mx-8 md:mx-24 lg:mx-32  flex-col justify-center items-center pt-8 md:pt-16">
+            <div className="mx-8 md:mx-24 lg:mx-32  flex-col justify-center items-center py-8 md:py-16">
                 <div>
                     <p className="text-2xl md:text-4xl text-center font-bold text-gray300 ">Featured Property Types</p>
                     <p className="text-base md:text-xl text-center font-semibold text-gray200">Find All Type of Property.</p>
@@ -39,7 +39,7 @@ const PropertyTypes = () => {
                         <p className="text-gray300 font-bold ">Office & Studio</p>
                         <p className='text-gray200'>122 Property</p>
                     </div>
-                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md">
+                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md md:col-start-2 lg:col-start-auto lg:col-span-1 ">
                         <div className='rounded-full w-16 h-16 flex justify-center items-center mb-4' style={{ backgroundColor: '#e8f5fc' }}>
                             <BuildingOfficeIcon className='w-10 h-10' style={{ color: '#18a3ff' }}></BuildingOfficeIcon>
                         </div>
