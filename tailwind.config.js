@@ -17,6 +17,7 @@ export default {
       gray300:'#2d3954',
       gray400:'#122947',
       white:'#FFFFFF',
+      grayopacity: 'rgba(115, 128, 157, 0.4)'
     }
   },
   plugins: [],
