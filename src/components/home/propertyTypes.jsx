@@ -1,6 +1,13 @@
 import { HomeIcon, HomeModernIcon, BuildingOffice2Icon, BuildingLibraryIcon, BuildingOfficeIcon} from '@heroicons/react/24/outline'
+import WhiteCard from '../cards/whitecard'
 
 const PropertyTypes = () => {
+    
+    const homeIcon = <HomeIcon className='w-10 h-10' style={{ color: '#ff0f0f' }} />
+    const homeModernIcon = <HomeModernIcon className='w-10 h-10' style={{ color: '#1cd36d' }}></HomeModernIcon>
+    const buildingOffice2Icon =<BuildingOffice2Icon className='w-10 h-10' style={{ color: '#dbba15' }}></BuildingOffice2Icon>
+    const buildingLibraryIcon = <BuildingLibraryIcon className='w-10 h-10' style={{ color: '#ac51d9' }}></BuildingLibraryIcon>
+    const buildingOfficeIcon = <BuildingOfficeIcon className='w-10 h-10' style={{ color: '#18a3ff' }}></BuildingOfficeIcon>
     return (
         <div className='bg-gray100'>
             <div className="mx-8 md:mx-24 lg:mx-32  flex-col justify-center items-center py-8 md:py-16">
@@ -10,43 +17,11 @@ const PropertyTypes = () => {
                 </div>
 
                 <div className='mt-8 md:mt-14 grid grid-cols-2  md:grid-cols-3 lg:grid-cols-5 gap-y-3 gap-x-3'>
-                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md">
-                        <div className='rounded-full w-16 h-16 flex justify-center items-center mb-4' style={{ backgroundColor: '#fce8e8' }}>
-                            <HomeIcon className='w-10 h-10' style={{ color: '#ff0f0f' }}></HomeIcon>
-                        </div>
-                        <p className="text-gray300 font-bold ">Family House</p>
-                        <p className='text-gray200'>122 Property</p>
-                    </div>
-
-                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md">
-                        <div className='rounded-full w-16 h-16 flex justify-center items-center mb-4' style={{ backgroundColor: '#eaf7ec' }}>
-                            <HomeModernIcon className='w-10 h-10' style={{ color: '#1cd36d' }}></HomeModernIcon>
-                        </div>
-                        <p className="text-gray300 font-bold ">House & Villa</p>
-                        <p className='text-gray200'>122 Property</p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md">
-                        <div className='rounded-full w-16 h-16 flex justify-center items-center mb-4' style={{ backgroundColor: '#fff4e6' }}>
-                            <BuildingOffice2Icon className='w-10 h-10' style={{ color: '#dbba15' }}></BuildingOffice2Icon>
-                        </div>
-                        <p className="text-gray300 font-bold ">Apartement</p>
-                        <p className='text-gray200'>122 Property</p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md">
-                        <div className='rounded-full w-16 h-16 flex justify-center items-center mb-4' style={{ backgroundColor: '#f6edfb' }}>
-                            <BuildingLibraryIcon className='w-10 h-10' style={{ color: '#ac51d9' }}></BuildingLibraryIcon>
-                        </div>
-                        <p className="text-gray300 font-bold ">Office & Studio</p>
-                        <p className='text-gray200'>122 Property</p>
-                    </div>
-                    <div className="flex flex-col justify-center items-center bg-white w-40 md:w-52 p-4 md:p-10 shadow-lg rounded-md md:col-start-2 lg:col-start-auto lg:col-span-1 ">
-                        <div className='rounded-full w-16 h-16 flex justify-center items-center mb-4' style={{ backgroundColor: '#e8f5fc' }}>
-                            <BuildingOfficeIcon className='w-10 h-10' style={{ color: '#18a3ff' }}></BuildingOfficeIcon>
-                        </div>
-                        <p className="text-gray300 font-bold ">Villa & Condo</p>
-                        <p className='text-gray200'>122 Property</p>
-                    </div>
-                    
+                    <WhiteCard style={{ backgroundColor: '#fce8e8' }} icon={homeIcon} propertyType={"Family House"} count={122}></WhiteCard>
+                    <WhiteCard style={{ backgroundColor: '#eaf7ec' }} icon={homeModernIcon} propertyType={"House & Villa"} count={122}></WhiteCard>
+                    <WhiteCard style={{ backgroundColor: '#fff4e6' }} icon={buildingOffice2Icon} propertyType={"Apartement"} count={122}></WhiteCard>
+                    <WhiteCard style={{ backgroundColor: '#f6edfb' }} icon={buildingLibraryIcon} propertyType={"Office & Studio"} count={122}></WhiteCard>
+                    <WhiteCard style={{ backgroundColor: '#e8f5fc' }} icon={buildingOfficeIcon} propertyType={"Villa & Condo"} count={122}></WhiteCard>                    
                 </div>
 
             </div>

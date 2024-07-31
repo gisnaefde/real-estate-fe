@@ -2,6 +2,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo3 from '../../assets/images/logo-3.png'
 import logo4 from '../../assets/images/logo-4.png'
 import { useState } from 'react'
+import Button from '../buttons/button'
 
 const Header = () => {
 
@@ -10,6 +11,11 @@ const Header = () => {
     const toggleMenu = () => {
         setOpen(!open);
     };
+
+    const handleClick = () => {
+        console.log("button login clicked!")
+    }
+
     return (
         <>
             {/* navbar desktop */}
@@ -27,7 +33,7 @@ const Header = () => {
                         <div className='col-span-2 flex justify-end font-bold'>
                             <button className='bg-green px-7 py-3 rounded-lg flex items-center' style={{ color: "white" }}>
                                 {/* <ArrowRightEndOnRectangleIcon className='w-6 h-6 mr-2 text-white' /> */}
-                                <p className='text-sm text-white'>Login</p>
+                                <Button onClick={handleClick} style={{ color: 'white'}} className={"text-sm text-green"}>Login</Button>
                             </button>
                         </div>
                     </div>
@@ -66,7 +72,8 @@ const Header = () => {
                         <div className='flex justify-center mt-6 font-bold'>
                             <button className='bg-white px-7 py-3 rounded-lg flex items-center'>
                                 {/* <ArrowRightOnRectangleIcon className='w-6 h-6 mr-2 text-green' /> */}
-                                <p className='text-lg text-green'>Login</p>
+                                <Button onClick={handleClick} style={{}} className={"text-lg text-green"}>Login</Button>
+                                {/* <p className='text-lg text-green'>Login</p> */}
                             </button>
                         </div>
                     </div>
