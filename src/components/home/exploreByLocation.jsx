@@ -14,8 +14,8 @@ const ExportByLocation = () => {
                 <p className="text-gray400 text-4xl font-bold">Explore By Location</p>
                 <p className="text-gray300 text-xl mt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-5 mt-10'>
-                <div className='relative w-96'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-5 mt-10 '>
+                <div className='relative w-80 md:w-96 '>
                     <img src={NewOrleans} className='rounded-lg w-full h-56'></img>
                     <div className='absolute inset-0 m-5'>
                         <div className='bg-grayopacity w-full h-full rounded-lg flex justify-center items-center'>
@@ -30,7 +30,7 @@ const ExportByLocation = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative w-96'>
+                <div className='relative w-80 md:w-96'>
                     <img src={California} className='rounded-lg w-full h-56'></img>
                     <div className='absolute inset-0 m-5'>
                         <div className='bg-grayopacity w-full h-full rounded-lg flex justify-center items-center'>
@@ -46,7 +46,7 @@ const ExportByLocation = () => {
                     </div>
                 </div>
 
-                <div className='relative w-96'>
+                <div className='relative w-80 md:w-96'>
                     <img src={Liverpool} className='rounded-lg w-full h-56'></img>
                     <div className='absolute inset-0 m-5'>
                         <div className='bg-grayopacity w-full h-full rounded-lg flex justify-center items-center'>
@@ -61,7 +61,7 @@ const ExportByLocation = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative w-96'>
+                <div className='relative w-80 md:w-96'>
                     <img src={Montreal} className='rounded-lg w-full h-56'></img>
                     <div className='absolute inset-0 m-5'>
                         <div className='bg-grayopacity w-full h-full rounded-lg flex justify-center items-center'>
@@ -77,7 +77,7 @@ const ExportByLocation = () => {
                     </div>
                 </div>
 
-                <div className='relative w-96'>
+                <div className='relative w-80 md:w-96'>
                     <img src={Newyork} className='rounded-lg w-full h-56'></img>
                     <div className='absolute inset-0 m-5'>
                         <div className='bg-grayopacity w-full h-full rounded-lg flex justify-center items-center'>
@@ -92,7 +92,7 @@ const ExportByLocation = () => {
                         </div>
                     </div>
                 </div>
-                <div className='relative w-96'>
+                <div className='relative w-80 md:w-96'>
                     <img src={Jerrsy} className='rounded-lg w-full h-56'></img>
                     <div className='absolute inset-0 m-5'>
                         <div className='bg-grayopacity w-full h-full rounded-lg flex justify-center items-center'>
