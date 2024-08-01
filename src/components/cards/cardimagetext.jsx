@@ -1,30 +1,30 @@
 import { MapPinIcon } from '@heroicons/react/24/outline'
 import Button from '../buttons/button'
 
-const CardImageText = ({image, forwat, propertyname, place, price, propertytype}) => {
+const CardImageText = ({image, classNameForwat, forwat, propertyname, place, price, propertytype}) => {
     return (
         <div className='flex justify-center'>
-            <div className=' bg-white shadow-lg w-80 rounded-lg'>
+            <div className=' bg-white shadow-lg w-64 rounded-lg'>
                 <div>
-                    <img src={image} className='w-80'></img>
+                    <img src={image} alt='property image ' className='w-64 rounded-t-lg'></img>
                 </div>
-                <div className='px-6 mt-8'>
+                <div className='px-4 mt-2'>
                     <div className='flex justify-center'>
-                        <button className='bg-orange100 text-orange text-sm px-3 py-1 font-semibold rounded-md'>{forwat}</button>
+                        <Button className={classNameForwat}>{forwat}</Button>
                     </div>
-                    <p className='font-bold mt-4'>{propertyname}</p>
+                    <p className='font-bold mt-1'>{propertyname}</p>
                     <div className='flex items-center text-gray'>
                         <MapPinIcon className='w-5 h-5  mr-3'></MapPinIcon>
-                        <p>{place}</p>
+                        <p className='text-sm'>{place}</p>
                     </div>
                 </div>
-                <hr className='text-gray mt-4'></hr>
-                <div className='my-4 flex justify-between items-center px-3'>
+                <hr className='text-gray mt-2'></hr>
+                <div className='my-4 flex justify-between items-center px-2'>
                     <div className='flex items-center'>
-                        <Button className={'bg-green p-3 text-white font-bold rounded-full'} >Rp. {price}</Button>
-                        <p>/ meter</p>
+                        <Button className={'bg-green px-3 py-1 text-xs text-white font-bold rounded-full'} >Rp. {price}</Button>
+                        <p className='text-xs'>/meter</p>
                     </div>
-                    <p>{propertytype}</p>
+                    <p className='text-sm'>{propertytype}</p>
                 </div>
             </div>
         </div>

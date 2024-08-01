@@ -1,4 +1,3 @@
-import { MapPinIcon, HomeModernIcon, BuildingOffice2Icon, BuildingLibraryIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline'
 import property1 from '../../assets/images/property-1.jpg'
 import Button from '../buttons/button'
 import CardImageText from '../cards/cardimagetext'
@@ -12,7 +11,11 @@ const PropertyListed = () => {
                     <p className="md:mx-32 text-base md:text-base mt-5 text-center font-semibold text-gray200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque lectus vitae nisl ullamcorper, nec sollicitudin odio egestas. Nulla semper odio tortor, a ultrices magna porta a.</p>
                 </div>
 
-                <div className='mt-8 md:mt-14 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-3 '>
+                <div className='mt-8 md:mt-14 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-y-5 gap-x-3 '>
+                    <CardImageText image={property1} classNameForwat={'bg-orange100 text-orange text-sm px-3 py-1 font-semibold rounded-md'} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>                    
+                    <CardImageText image={property1} classNameForwat={'bg-orange100 text-orange text-sm px-3 py-1 font-semibold rounded-md'} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>                    
+                    <CardImageText image={property1} classNameForwat={'bg-orange100 text-orange text-sm px-3 py-1 font-semibold rounded-md'} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>                    
+                    <CardImageText image={property1} classNameForwat={'bg-orange100 text-orange text-sm px-3 py-1 font-semibold rounded-md'} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>  
                     <CardImageText image={property1} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>                    
                     <CardImageText image={property1} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>                    
                     <CardImageText image={property1} forwat={"for rent" } propertyname={"Red Carpet Real Estat"} place={"210 Zirak Road, Canada"} price="30.488" propertytype={"Apartement"}></CardImageText>                    

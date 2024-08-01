@@ -26,9 +26,12 @@ const Header = () => {
                         <div className=' col-span-8 flex justify-center items-center space-x-16 font-medium'>
                             <a className='cursor-pointer hover:text-gray hover:underline'>Home</a>
                             <a className='cursor-pointer  hover:text-gray hover:underline'>About</a>
-                            <a className='cursor-pointer  hover:text-gray hover:underline'>Services</a>
-                            <a className='cursor-pointer  hover:text-gray hover:underline'>Pricing</a>
+                            {/* <a className='cursor-pointer  hover:text-gray hover:underline'>Services</a> */}
+                            {/* <a className='cursor-pointer  hover:text-gray hover:underline'>Pricing</a> */}
                             <a className='cursor-pointer  hover:text-gray hover:underline'>Contact</a>
+                            <a className='cursor-pointer  hover:text-gray hover:underline'>Buy</a>
+                            <a className='cursor-pointer  hover:text-gray hover:underline'>Rent</a>
+                            <a className='cursor-pointer  hover:text-gray hover:underline'>Sold</a>
                         </div>
                         <div className='col-span-2 flex justify-end font-bold'>
                             <button className='bg-green px-7 py-3 rounded-lg flex items-center' style={{ color: "white" }}>
