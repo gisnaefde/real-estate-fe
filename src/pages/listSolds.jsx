@@ -11,7 +11,7 @@ const ListSolds = () => {
             <div className='bg-white mt-24'>
                 <div className="mx-8 md:mx-24 lg:mx-32  flex-col justify-center items-center py-8 md:py-16">
                     <div>
-                        <p className="text-2xl md:text-4xl text-center font-bold text-gray300 ">List of Properties to Rent</p>
+                        <p className="text-2xl md:text-4xl text-center font-bold text-gray300 ">List of Properties Solds</p>
                         <p className="md:mx-32 text-base md:text-base mt-5 text-center font-semibold text-gray200">Take a look at our recently sold properties and see the success stories of our satisfied clients. From stunning residential homes to profitable investment deals, these properties have found their perfect owners. Get inspired and envision what could be your next great investment.</p>
                     </div>
 
