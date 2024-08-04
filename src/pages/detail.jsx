@@ -79,7 +79,7 @@ const Detail = () => {
                         <div className="">
                             <p className=" text-gray text-justify">Your forever home is nestled on a tranquil tree-lined cul-de-sac in Avenida Espana neighborhood of Santa Teresa. This beautiful 5bd, 3ba home offers the perfect blend of modern amenities & classic appeal. Step through double doors & prepare to be captivated by the high ceilings creating an expansive & elegant living/dining room. The heart of the home is a stunningly remodeled kitchen w/ sleek shaker cabinets topped by quartz counters, decorated w/ stainless steel appliances, recess lighting, smart shades, expanded pantry, bamboo flooring, 10ft waterfall island to complete the culinary experience. Convenient ground-floor bed & full bath, perfect for office or guest bed. Step out to a private & lush yard, perfect for play, relaxation & entertaining. Coveted location offers ST Golf, Paseo Park, Archery, Avenida Espana Park, Laguna Seca Garden, LPAC Swim, ST Park, all at your doorstep offering endless opportunity for recreation. Short distance is the light rail station, HWY 85 & 101. ADDITIONAL: owned solar, new stucco & paint, copper plumbing, french drains, new roof & sun tunnel, new dual ac & furnace, new electrical, new windows, crown molding, EV hookup, Los Paseos Elementary, Martin Murphy Middle, Sobrato High. Experience the epitome of Santa Teresa living</p>
                         </div>
-                        <div className="">
+                        <div className="h-64 w-full md:h-full">
                             <Map lat={-6.2593442} long={106.962137}/>
                         </div>
                     </div>

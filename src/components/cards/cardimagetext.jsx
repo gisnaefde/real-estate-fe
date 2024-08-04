@@ -9,7 +9,7 @@ const CardImageText = ({image, classNameForwat, forwat, propertyname, place, pri
     }
 
     return (
-        <div className='flex justify-center hover:shadow-2xl' onClick={()=> {navigate("/detail")}}>
+        <div className='flex justify-center hover:shadow-2xl' onClick={()=> {handleNavigation("/detail")}}>
             <div className=' bg-white shadow-lg w-64 rounded-lg  transform transition-transform duration-300 hover:shadow-2xl hover:translate-y-[-5px] cursor-pointer'>
                 <div>
                     <img src={image} alt='property image ' className='w-64 rounded-t-lg'></img>

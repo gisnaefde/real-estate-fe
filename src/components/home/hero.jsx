@@ -20,9 +20,9 @@ const Hero = () => {
                         Find new & featured property located in your local city.
                     </p>
                     <div className='flex justify-center mt-9'>
-                        <Button onClick={()=>handleNavigation("listbuys")} className={"p-4 bg-white opacity-55 w-48 hover:bg-green hover:opacity-100 hover:text-white"}>Buy</Button>
-                        <Button onClick={()=>handleNavigation("listrents")} className={"p-4 bg-white opacity-55 w-48 hover:bg-green hover:opacity-100 hover:text-white"}>Rent</Button>
-                        <Button onClick={()=>handleNavigation("listsolds")} className={"p-4 bg-white opacity-55 w-48 hover:bg-green hover:opacity-100 hover:text-white"}>Sold</Button>
+                        <Button onClick={()=>handleNavigation("listbuys")} className={"p-2 md:p-4 bg-white opacity-55 w-24 md:w-48 hover:bg-green hover:opacity-100 hover:text-white"}>Buy</Button>
+                        <Button onClick={()=>handleNavigation("listrents")} className={"p-2 md:p-4 bg-white opacity-55 w-24 md:w-48 hover:bg-green hover:opacity-100 hover:text-white"}>Rent</Button>
+                        <Button onClick={()=>handleNavigation("listsolds")} className={"p-2 md:p-4 bg-white opacity-55 w-24 md:w-48 hover:bg-green hover:opacity-100 hover:text-white"}>Sold</Button>
                     </div>
                 </div>
             </div>

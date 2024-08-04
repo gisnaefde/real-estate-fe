@@ -3,10 +3,12 @@ import logo3 from '../../assets/images/logo-3.png'
 import logo4 from '../../assets/images/logo-4.png'
 import { useState } from 'react'
 import Button from '../buttons/button'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
 
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setOpen(!open);
@@ -16,13 +18,17 @@ const Header = () => {
         console.log("button login clicked!")
     }
 
+    const handleNavigation = (path) => {
+        navigate(path)
+    }
+
     return (
         <>
             {/* navbar desktop */}
             <div className='hidden md:block absolute z-50'>
                 <div className='fixed top-0 left-0 right-0 shadow-xl bg-white'>
                     <div className="mx-24 my-4 grid grid-cols-12 gap-4">
-                        <img src={logo3} className='h-10 col-span-2' ></img>
+                        <img src={logo3} className='h-10 col-span-2' onClick={()=>{handleNavigation('/')}}></img>
                         <div className=' col-span-8 flex justify-center items-center space-x-16 font-medium'>
                             <a className='cursor-pointer hover:text-gray hover:underline'>Home</a>
                             <a className='cursor-pointer  hover:text-gray hover:underline'>About</a>
