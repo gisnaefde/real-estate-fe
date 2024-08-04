@@ -1,7 +1,13 @@
 import imageLogin from '../assets/images/loginimage2.jpg'
 import Button from '../components/buttons/button'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+    const navigate = useNavigate()
+    const handleNavigation = (path) => {
+        navigate(path)
+    }
+
     return (
         <div className='bg-green p-4 md:p-9 h-screen'>
             <div className='px-7 md:mx-60 my-14 border-2 border-white p-8 rounded-3xl'>
@@ -25,7 +31,7 @@ const Login = () => {
                     <div className=' absolute z-10 bottom-2 md:bottom-5 w-full flex justify-center'>
                         <div className='bg-gray400 bg-opacity-50 text-white rounded-lg px-4 py-2 flex'>
                         <p>Don't have an account? </p>
-                        <Button className={"text-gray400"}>SignUp</Button>
+                        <Button onClick={()=>{handleNavigation('/signup')}} className={"text-gray400"}>SignUp</Button>
                         </div>
                     </div>
                 </div>

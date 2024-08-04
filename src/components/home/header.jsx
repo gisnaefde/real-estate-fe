@@ -14,10 +14,6 @@ const Header = () => {
         setOpen(!open);
     };
 
-    const handleClick = () => {
-        console.log("button login clicked!")
-    }
-
     const handleNavigation = (path) => {
         navigate(path)
     }
@@ -42,7 +38,7 @@ const Header = () => {
                         <div className='col-span-2 flex justify-end font-bold'>
                             <button className='bg-green px-7 py-3 rounded-lg flex items-center' style={{ color: "white" }}>
                                 {/* <ArrowRightEndOnRectangleIcon className='w-6 h-6 mr-2 text-white' /> */}
-                                <Button onClick={handleClick} style={{ color: 'white'}} className={"text-sm text-green"}>Login</Button>
+                                <Button onClick={()=>{handleNavigation('/login')}} style={{ color: 'white'}} className={"text-sm text-green"}>Login</Button>
                             </button>
                         </div>
                     </div>
@@ -81,7 +77,7 @@ const Header = () => {
                         <div className='flex justify-center mt-6 font-bold'>
                             <button className='bg-white px-7 py-3 rounded-lg flex items-center'>
                                 {/* <ArrowRightOnRectangleIcon className='w-6 h-6 mr-2 text-green' /> */}
-                                <Button onClick={handleClick} style={{}} className={"text-lg text-green"}>Login</Button>
+                                <Button onClick={()=>{handleNavigation('/login')}}style={{}} className={"text-lg text-green"}>Login</Button>
                                 {/* <p className='text-lg text-green'>Login</p> */}
                             </button>
                         </div>
